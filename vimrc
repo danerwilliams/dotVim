@@ -18,3 +18,5 @@ set smartindent
 set cindent
 
 set mouse=a
+
+set number
