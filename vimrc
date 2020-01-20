@@ -5,6 +5,7 @@ execute pathogen#infect()
 
 syntax on
 
+let g:dracula_italic = 0
 colorscheme dracula
 
 filetype plugin on
