@@ -11,9 +11,9 @@ colorscheme dracula
 
 filetype plugin on
 
-set tabstop=3
-"setshiftwidth=3
-"setsofttabstop=3
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
 set autoindent
 set smartindent
