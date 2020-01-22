@@ -20,7 +20,7 @@ set smartindent
 set cindent
 
 " Automatically closing braces
-inoremap { {<CR>}<Esc>ko
+"inoremap { {<CR>}<Esc>ko
 "inoremap <silent> ( ()<ESC>hli
 
 set mouse=a
