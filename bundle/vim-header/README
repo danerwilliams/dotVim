@@ -1,0 +1,74 @@
+Simple vim plugin for adding function/file headers quickly
+
+Installation Steps:
+1. First, install Vundle from the following link: 
+https://github.com/VundleVim/Vundle.vim
+Follow all of the Quick Start instructions through Configuring plugins.
+
+2. Go to your .vimrc and add the following line between vundle#begin and vundle#end
+ Plugin 'https://gitlab.com/mmorri22/vim-header.git'
+
+3. Now, you must create the following variables in your .vimrc.
+let g:VimHeaderEmails = 'email1@nd.edu, email2@nd.edu, ...'                              
+let g:VimHeaderNames = 'name1, name2, ...'    
+
+4. Save and exit your .vimrc. Then open it again. Alternatively, you could use the 
+:source .vimrc command in the vim command line. 
+
+5. Run :PluginInstall. If all goes well, you should be able to use the following commands:
+:InsertFileHeader
+:InsertFunctionHeader
+
+InsertFileHeader adds the appopriate file header information to the top of the file and 
+switches to insert mode to enter file description.
+
+InsertFunctionHeader adds the header information above the current line and switches to
+insert mode to enter function description. This function requires the cursor to be located
+on the same line as the function. 
+
+It is recommended that you add the following lines to your .vimrc:
+
+map <Leader>h :InsertFunctionHeader<CR>
+map <Leader>f :InsertFileHeader<CR>
+
+This means that when you are in vim's normal mode, you can simply
+type \h to add a function header or \f to add a file header.
+
+Your function header should be formatted like this for best results:
+
+post-conditions functionname(preconditions);
+
+Ex:
+/********************************************
+* Function Name: getNumber
+* Pre-conditions: none 
+* Post-conditions: int
+* 
+********************************************/
+int getNumber();
+
+Note that the plugin treats anything before the function name as a postcondition. 
+Also, don't put other code on the same line as your function header for best performance.
+The most important thing is to not put anymore () on this line because that will 
+definitely screw it up.
+
+
+NOTES:
+1. The plugin will only work with versions of vim that have been compiled
+with either python or python3. You can check if your vim is compatible through 
+the pipeline:
+vim --version | grep python
+If you see +python or +python3 then it should work. The vim on the student machines
+will work with the plugin.
+
+2. The plugin generally works very well, however, it may not always extract the
+correct information depending on how the code is formatted. Always make sure to 
+double check that the information in the comments is correct.
+
+
+Email: mmorri22@nd.edu
+Original Author: Benjamin Lyons blyons@nd.edu
+
+Acknowledgements:
+This half-finished website helped a lot:
+http://candidtim.github.io/vim/2017/08/11/write-vim-plugin-in-python.html
