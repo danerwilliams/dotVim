@@ -3,6 +3,10 @@
 "call pathogen#helptags()
 execute pathogen#infect()
 
+"fix tmux color issue
+"set background = dark
+set t_Co=256
+
 syntax on
 
 let g:dracula_italic = 0
