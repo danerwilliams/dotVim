@@ -37,9 +37,38 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 	Plugin 'VundleVim/Vundle.vim'
-	Plugin 'https://gitlab.com/mmorri22/vim-header.git'
+
+	"Plugin 'https://gitlab.com/mmorri22/vim-header.git'
 	let g:VimHeaderEmails = 'dwilli36@nd.edu'
 	let g:VimHeaderNames = 'Dane Williams'
-call vundle#end()	
+
+	"Plugin 'https://github.com/airblade/vim-gitgutter.git'
+	"Plugin 'airblade/vim-gitgutter'
+	
+	Plugin 'kien/rainbow_parentheses.vim'
+	au VimEnter * RainbowParenthesesToggle
+	let g:rbpt_colorpairs = [ 
+	    \ ['darkgreen',   'RoyalBlue3'],
+		\ ['brown',       'RoyalBlue3'],	
+	    \ ['red',         'firebrick3'],
+	    \ ['Darkblue',    'SeaGreen3'],
+	    \ ['darkgray',    'DarkOrchid3'],
+	    \ ['darkgreen',   'firebrick3'],
+	    \ ['darkcyan',    'RoyalBlue3'],
+	    \ ['darkred',     'SeaGreen3'],
+	    \ ['darkmagenta', 'DarkOrchid3'],
+	    \ ['brown',       'firebrick3'],
+	    \ ['gray',        'RoyalBlue3'],
+	    \ ['darkmagenta', 'DarkOrchid3'],
+	    \ ['darkgreen',   'RoyalBlue3'],
+	    \ ['darkcyan',    'SeaGreen3'],
+	    \ ['Darkblue',    'firebrick3'],
+	    \ ['darkred',     'DarkOrchid3'],
+		\ ['white',		  'RoyalBlue3'],
+	    \ ]
+
+
+call vundle#end()
 filetype plugin indent on
