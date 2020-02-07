@@ -1,0 +1,3 @@
+# exclude all bundle files except for vundle submodule
+bundle/*
+!bundle/Vundle.vim
