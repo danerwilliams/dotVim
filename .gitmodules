@@ -1,9 +1,0 @@
-[submodule "bundle/fugitive"]
-	path = bundle/fugitive
-	url = http://github.com/tpope/vim-fugitive.git
-[submodule "bundle/draculaTheme"]
-	path = bundle/draculaTheme
-	url = https://github.com/dracula/vim.git
-[submodule "bundle/Vundle.vim"]
-	path = bundle/Vundle.vim
-	url = https://github.com/VundleVim/Vundle.vim.git
