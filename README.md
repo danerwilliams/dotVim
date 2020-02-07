@@ -8,5 +8,5 @@ cd ~/.vim
 git submodule init #NOTE: you can ignore the error'fatal: No url found for submodule path 'bundle/vim-sensible' in .gitmodules'    
 git submodule update    
     
-#open vim
+#open vim    
 :PluginInstall    
