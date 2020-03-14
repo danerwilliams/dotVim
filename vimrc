@@ -18,11 +18,17 @@ Plugin 'https://gitlab.com/mmorri22/vim-header.git'
 let g:VimHeaderEmails = 'dwilli36@nd.edu'
 let g:VimHeaderNames = 'Dane Williams'
 
+"cool status bar
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+"vim settings everyone can agree on
+Plugin 'tpope/vim-sensible'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-sensible'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
