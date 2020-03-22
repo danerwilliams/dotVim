@@ -13,6 +13,9 @@ Plugin 'VundleVim/Vundle.vim'
 "dracula theme
 Plugin 'dracula/vim', { 'name': 'dracula' }
 
+"toml syntax support
+Plugin 'cespare/vim-toml'
+
 "morrison commenting header BS
 Plugin 'https://gitlab.com/mmorri22/vim-header.git'
 let g:VimHeaderEmails = 'dwilli36@nd.edu'
