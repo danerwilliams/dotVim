@@ -28,6 +28,9 @@ Plugin 'vim-airline/vim-airline-themes'
 "vim settings everyone can agree on
 Plugin 'tpope/vim-sensible'
 
+"flex and bison syntax highlighting for compilers
+Plugin 'justinmk/vim-syntax-extra'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
