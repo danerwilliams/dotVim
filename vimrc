@@ -31,6 +31,9 @@ Plugin 'tpope/vim-sensible'
 "flex and bison syntax highlighting for compilers
 Plugin 'justinmk/vim-syntax-extra'
 
+"bminor syntax highlighting
+Plugin 'ginglis13/bminor-vim-syntax-highlighting'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
