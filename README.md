@@ -15,5 +15,5 @@ Initiatialize and update submodules
 `git submodule init`  
 `git submodule update`  
   
-Run: 
+Run:  
 `vim +PluginInstall +qall`  
