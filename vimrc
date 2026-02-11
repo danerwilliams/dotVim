@@ -40,7 +40,11 @@ set t_Co=256
 
 let g:dracula_italic = 0
 let g:dracula_colorterm = 0
-colorscheme dracula
+try
+  colorscheme dracula
+catch /^Vim\%((\a\+)\)\=:E185/
+  " dracula not yet installed, will work after PluginInstall
+endtry
 
 set tabstop=4 expandtab
 set shiftwidth=4
